@@ -45,8 +45,8 @@ for i, item in enumerate(a):
 
 # Проходит по элементам после минимального, считает их сумму и возводит в квадрат
 # оставшиеся элементы
-for i in range(i_min + 1, len(a)):
-    summ += math.fabs(a[i])
+for i in enumerate(a, start=i_min):
+    summ += math.fabs(i[1])
 
 # Сортирует по возрастанию
 b = tuple(sorted(c))
