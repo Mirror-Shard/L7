@@ -14,9 +14,9 @@ if __name__ == '__main__':
     sum = 0
     q = 0
 
-    for i in enumerate(a, 0):
-        if i[1] % 2 == 0:
-            sum += i[1]
+    for i in a:
+        if i % 2 == 0:
+            sum += i
             q += 1
 
     print(f"Сумма чётных элементов равна: {sum}, всего чётных элементов: {q}")
